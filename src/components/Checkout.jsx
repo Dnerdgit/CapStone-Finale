@@ -4,12 +4,12 @@ import { useEffect } from "react";
 import './styles/checkout.css'
 import { Container, Row, Col, Card, Form, Table, Button } from "react-bootstrap";
 import React from 'react'
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 
 export default function Checkout() {
   
-  const history = useHistory();
+  // const history = useHistory();
 
   useEffect(() => {
     let isMounted = true;
