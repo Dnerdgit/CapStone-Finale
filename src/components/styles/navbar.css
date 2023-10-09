@@ -1,0 +1,179 @@
+/*CSS for NavBar*/
+
+.nav-header {
+    background-image: url('/ECommerce photos/RedMoon.jpg');
+    /* background-color: rgb(138, 7, 7); */
+    color: #533686;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* gap: 2rem; */
+    /* padding: 0 1rem; */
+    /* margin: 20px 0px 0px; */
+    position:sticky;
+    width: 100%;
+  }
+  
+  .nav-header ul {
+    font-size: 16px;
+    position:sticky;
+    padding: 0;
+    margin: 5 0 0 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    background-size: cover;
+    position:sticky;
+  }
+  
+  .nav-header ul li {
+    /* margin: 0 50px; */
+    position:sticky;
+    justify-content:space-between;
+    background-size: cover;
+  }
+  
+.nav {
+    /* background-color: rgba(165, 2, 2, 0.415); */
+    background-image: url("/ECommerce photos/AbstartRed.webp");
+    font-family: "Poppins", sans-serif;
+    color: #7439db;
+    display: flex;
+    /* box-shadow: 0 10px #333; */
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    position:sticky;
+    width: 100%;
+  }
+  
+  
+  .nav ul {
+    font-size: 18px;
+    position:sticky;
+    padding: 0;
+    margin: 5 0 0 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-size: cover;
+  }
+  .nav ul li {
+    position:sticky;
+    justify-content: center;
+    background-size: cover;
+    margin: 0px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .nav ul li:hover {
+    color: #930000;
+    text-decoration: underline;
+  }
+
+/*CSS for sign-in link*/
+.sign-in-link {
+    /* background-color: rgb(164, 157, 157); */
+    font-family: "Poppins", sans-serif;
+    color: red;
+    display: flex;
+    /* box-shadow: 0 10px #333; */
+    justify-content:flex-end;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    margin: 15px 20px 5px 5px;
+    border-radius: 40px;
+  }
+  
+a {
+  color: red;
+  text-decoration: none;
+}
+
+
+  a .sign-in-link{
+    /* position:absolute; */
+    font-weight: 1000;
+    color: red;
+    text-decoration: none;
+    justify-content: flex-end;
+  }
+  a .sign-in-link:hover {
+    color: green;
+    text-decoration: underline;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  input .star {
+    cursor: pointer;
+    transition: color 200ms;
+  }
+
+.cart-place {
+  font-weight: 1000;
+  color: red;
+  text-decoration: none;
+  justify-content: flex-end;
+}
+
+.shopping-cart {
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.site-title {
+    background-color: rgb(20, 1, 1);
+    color: #bd0000ea;
+    display: flex;
+    box-shadow: 0 10px #2321219f;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap: 2rem;
+    padding: 3px 1rem;
+    border-radius: 40px;
+    text-decoration: none;
+  }
+  
+  .title {
+    margin: 2px 20px 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position:relative;
+    justify-content:flex-start;
+    align-items:flex-start;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+
+  /*Starter CSS for Cart: Navbar*/
+
+
+.cart {
+    cursor: pointer;
+}
+
+.cart span:nth-child(1) {
+    font-size: 2rem;
+    color:#06bd5c;
+}
+
+.cart span:nth-child(2) {
+    padding: 0 3px;
+    background-color: #270a5a;
+    color:#06bd5c;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    top:-15px;
+}

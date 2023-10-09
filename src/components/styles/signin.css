@@ -1,0 +1,73 @@
+body {
+    margin:0;
+}
+
+.sign-in-log{
+    margin: 10px 90px;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.042);
+    background-image: url("/ECommerce photos/1157691.jpg");
+    border:3px solid red;
+    border-radius: 8%;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-left: 40px;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+h2 .on-sign {
+    text-align: center;
+    color: red;
+    text-decoration: none;
+}
+
+.line-2 {
+    text-align: center;
+}
+
+h3 {
+    color:red;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+
+/* ul {
+    color:rgb(0, 255, 8);
+} */
+
+input {
+  margin: 0 12.5px ;
+  /* width: 83.5%; */
+  height: 50%;
+  background: rgba(255, 255, 255, 0.133);
+  border: 2px solid rgba(255, 0, 0, 0.855);
+  border-radius: 10px;
+  font-size: 16px;
+  color: green;
+  padding: 10px 0px;
+}
+
+button.login {
+    font-weight: bold;
+    margin-top: 12px;
+    margin-right: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: red;
+    border: 3px solid rgb(11, 0, 0);
+    border-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  button.login:hover {
+    background-color: green;
+  }
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}

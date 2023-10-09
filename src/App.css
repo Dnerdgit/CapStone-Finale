@@ -1,0 +1,173 @@
+#root {
+  /* background-image: url("../ECommerce photos/Futuristic-Red-Black-Background-Design-Graphics-30694681-1.jpg"); */
+  margin: 0 auto;
+}
+
+/*Homepage*/
+body {
+  margin: 0;
+  background-image: url("../ECommerce photos/Futuristic-Red-Black-Background-Design-Graphics-30694681-1.jpg");
+}
+
+.home-image {
+  margin: 150px auto;
+  margin-bottom: 0;
+  padding: 30px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(186, 1, 1, 0.042);
+  border-radius: 80%;
+  height:400px;
+  width: 50%;
+  object-fit: contain;
+}
+
+/*CSS for AllProducts*/
+.sign-in {
+  grid-area: sign-in;
+  background-color: green;
+}
+
+/*CSS for SingleProduct and product catergories link*/
+
+/* .single-product img{
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  display:grid;
+  justify-content: left;
+  } */
+
+.single-product {
+  display:flex;
+  margin: 30px auto;
+}
+
+.left-single-image img{
+  padding: 5px;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border-radius: 10%;
+  display:grid;
+  justify-content: left;
+  }
+  
+.right-single-above-details {
+  display:flex;
+  justify-content: right;
+  color:#d20808;
+  margin-bottom: 50px;
+  }
+
+  h2 {
+    display: flex;
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+.right-single-below-details {
+  color:#d20808;
+  /* justify-content: right; */
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+  text-wrap:inherit;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button.cart-plus {
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: red;
+  border: 3px solid rgb(11, 0, 0);
+  border-radius: 5px;
+}
+
+button.cart-plus:hover {
+  background-color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .crud {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .table td {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(54, 28, 28);
+  text-align: center;
+  color: white;
+} */
+
+/* table td button {
+  padding: 5px 10px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+table td button.edit {
+  border: 1px solid green;
+  background-color: rgb(2, 108, 2);
+  color:white;
+}
+
+table td button.edit:hover {
+  background-color: #5b9228;
+}
+
+table td button.delete {
+  border: 1px solid red;
+  background-color: rgb(196, 19, 19);
+  color: white;
+}
+
+table td button.delete:hover {
+  background-color: rgb(133, 14, 14);
+} */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

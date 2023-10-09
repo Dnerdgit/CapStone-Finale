@@ -1,0 +1,42 @@
+/*CSS for SearchBar*/
+
+.search-bar {
+    background-color: #270a5a0b;
+    font-family: "Poppins", sans-serif;
+    color: #7439db;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0px 0px 0px;
+    text-decoration: none;
+  }
+  
+  .product-search {
+    padding: 10px 40px;
+    border-radius: 40px;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+/* input {
+  height: 50%;
+  padding: 10px 0;
+  } */
+
+/* .searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: azure;
+  display: grid;
+  place-items: center;
+} */
+
+/* input:focus {
+  outline: none;
+}
+
+.searchIcon svg {
+  font-size: 16px;
+} */
