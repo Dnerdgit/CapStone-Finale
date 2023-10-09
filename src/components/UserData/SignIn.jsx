@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useSignIn } from 'react-auth-kit';
-// import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react';
 import '../styles/signin.css'
@@ -18,7 +16,7 @@ export default function SignInLink ({signIn}) {
     
    
 
-    const retrieveSignin = async () => {
+    const handleSignin = async () => {
         try {
             const response = await fetch("https://fakestoreapi.com/auth/login",{
                 method: "POST",
@@ -38,11 +36,12 @@ export default function SignInLink ({signIn}) {
 
                 localStorage.setItem("token", token)
                 
-                isAuthenticated(true);
-                navigate("/product-list")
+                isAuthenticated;
+                error;
 
+                navigate("/product-list")
                 signIn()
-                return(error);
+                
             }
             
             
@@ -55,7 +54,7 @@ export default function SignInLink ({signIn}) {
         useEffect(() => {
             const userId = localStorage.getItem("token");
             if (userId) {
-                isAuthenticated(true);
+                isAuthenticated;
             }
         },[])
 
@@ -64,7 +63,7 @@ export default function SignInLink ({signIn}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const signInApproval = await retrieveSignin(username, password);
+        const signInApproval = await handleSignin(username, password);
         console.log(signInApproval);
         
     } 

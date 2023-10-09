@@ -19,7 +19,7 @@ export default function CreateAcc ({signIn}) {
     
    
 
-    const retrieveSignin = async () => {
+    const handleNewAccount = async () => {
         try {
             const response = await fetch("https://fakestoreapi.com/auth/login",{
                 method: "POST",
@@ -39,7 +39,12 @@ export default function CreateAcc ({signIn}) {
                 console.log(result);
 
                 localStorage.setItem("token", token)
-                return(error);
+                
+                isAuthenticated;
+                error;
+
+                navigate("/product-list")
+                signIn()
             }
             
             
@@ -62,7 +67,7 @@ export default function CreateAcc ({signIn}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const createSignIn = await retrieveSignin(username, password, email);
+        const createSignIn = await handleNewAccount(username, password, email);
         console.log(createSignIn);
 
         
