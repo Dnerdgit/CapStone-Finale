@@ -70,7 +70,7 @@ function App() {
               element={<Home/>}
               />
             <Route 
-              path="/auth/login" 
+              path="/sign_in" 
               element={<SignIn/>}
               />
             <Route

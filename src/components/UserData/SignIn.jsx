@@ -3,13 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react';
 import '../styles/signin.css'
 
-export default function SignInLink ({signIn}) {
+export default function SignInLink () {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const { 
-        error,
-        getAccessTokenSilently, 
         loginWithRedirect, 
         isAuthenticated 
     } = useAuth0();
@@ -28,19 +26,20 @@ export default function SignInLink ({signIn}) {
                     password: password,
                 }),
             });
+            
+            console.log(response);
 
             if (response.ok) {
                 const result = await response.json();
-                const token = await getAccessTokenSilently(result); 
                 console.log(result);
+                const token = result.token; 
+                
 
                 localStorage.setItem("token", token)
-                
-                isAuthenticated;
-                error;
 
-                navigate("/product-list")
-                signIn()
+
+                navigate("/products-list")
+        
                 
             }
             
@@ -63,7 +62,7 @@ export default function SignInLink ({signIn}) {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        const signInApproval = await handleSignin(username, password);
+        const signInApproval = await handleSignin();
         console.log(signInApproval);
         
     } 
